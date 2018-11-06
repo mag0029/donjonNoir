@@ -3,8 +3,7 @@ package com.mgiraud.donjonNoir.method;
 import java.util.ArrayList;
 
 import com.mgiraud.donjonNoir.entities.*;
-import com.mgiraud.donjonNoir.entities.personnages.Heros;
-import com.mgiraud.donjonNoir.entities.personnages.Personnage;
+import com.mgiraud.donjonNoir.entities.personnages.*;
 import com.mgiraud.donjonNoir.utils.ScannerProvider;
 
 public class Jeu {
@@ -13,7 +12,7 @@ public class Jeu {
 	private ArrayList<Etage> donjonEnCours;
 	
 	public void miseEnPlace () {
-		equipe = new ArrayList<Personnage>;
+		equipe = new ArrayList<Personnage>();
 		int choix = -1;
 		System.out.println("******************************************************************************");
 		System.out.println("****                                                                      ****");
@@ -32,13 +31,23 @@ public class Jeu {
 	
 	public void creerHero() {
 		Heros newHero;
-		
+		switch (choixTypeHero()) {
+			case 1 : newHero = new Paladin();
+				break;
+			case 2 : newHero = new Barbare();
+				break;
+			case 3 : newHero = new Magicien();
+				break;
+			default : newHero = new Paladin(); 
+		}
 		this.equipe.add(newHero);
 	}
 	
 	public void creerMonstre() {
 		
 	}
+	
+	
 	
 	public ArrayList<Etage> creerDonjon(int nbEtage) {
 		ArrayList<Etage> donjon = new ArrayList<Etage>();
@@ -84,6 +93,20 @@ public class Jeu {
 		return choix;
 	}
 	
-	
+	public int choixTypeHero() {
+		int choix = -1;
+		System.out.println("******************************************************************************");
+		System.out.println("****                                                                      ****");
+		System.out.println("****                Choisir la classe de votre héros                      ****");
+		System.out.println("****      1.Paladin                                                       ****");
+		System.out.println("****      2.Barbare                                                       ****");
+		System.out.println("****      3.Magicien                                                      ****");
+		System.out.println("****                                                                      ****");
+		System.out.println("******************************************************************************");
+		while (choix<1 || choix >3) {
+			choix = ScannerProvider.getInstance().getScanner().nextInt();
+		}
+		return choix;
+	}
 	
 }
