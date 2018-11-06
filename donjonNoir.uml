@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_3WLCoOH-EeiCvrel5-gbMw" name="donjonNoir">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_3ozDsOH-EeiCvrel5-gbMw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_5gtAgOH-EeiCvrel5-gbMw" name="Utilisateur"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_8fyAwOH-EeiCvrel5-gbMw" name="créé le donjon">
+    <include xmi:type="uml:Include" xmi:id="_-Y_IoOH_EeiCvrel5-gbMw" addition="_bO29MOH_EeiCvrel5-gbMw"/>
+    <include xmi:type="uml:Include" xmi:id="_-6NmYOH_EeiCvrel5-gbMw" addition="_04V40OH_EeiCvrel5-gbMw"/>
+    <include xmi:type="uml:Include" xmi:id="__qWC0OH_EeiCvrel5-gbMw" addition="_5Tt38OH_EeiCvrel5-gbMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_bO29MOH_EeiCvrel5-gbMw" name="choisi le nombre d'étages du donjon"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_04V40OH_EeiCvrel5-gbMw" name="rempli les étages">
+    <include xmi:type="uml:Include" xmi:id="_AH_oIOIAEeiCvrel5-gbMw" addition="_2Z8OcOH_EeiCvrel5-gbMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_2Z8OcOH_EeiCvrel5-gbMw" name="créé les monstres"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_5Tt38OH_EeiCvrel5-gbMw" name="créé ses héros">
+    <include xmi:type="uml:Include" xmi:id="_RZXCQOIAEeiCvrel5-gbMw" addition="_OgbtUOIAEeiCvrel5-gbMw"/>
+    <include xmi:type="uml:Include" xmi:id="_WFc98OIAEeiCvrel5-gbMw" addition="_CK-MgOIAEeiCvrel5-gbMw"/>
+    <include xmi:type="uml:Include" xmi:id="_WtOvoOIAEeiCvrel5-gbMw" addition="_M2VjAOIAEeiCvrel5-gbMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_70DtwOH_EeiCvrel5-gbMw" memberEnd="_70WosOH_EeiCvrel5-gbMw _70pjoOH_EeiCvrel5-gbMw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_70M3sOH_EeiCvrel5-gbMw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_70M3seH_EeiCvrel5-gbMw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_70WosOH_EeiCvrel5-gbMw" name="créé le donjon" type="_8fyAwOH-EeiCvrel5-gbMw" association="_70DtwOH_EeiCvrel5-gbMw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_70pjoOH_EeiCvrel5-gbMw" name="utilisateur" type="_5gtAgOH-EeiCvrel5-gbMw" association="_70DtwOH_EeiCvrel5-gbMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_CK-MgOIAEeiCvrel5-gbMw" name="choisi les armes"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_M2VjAOIAEeiCvrel5-gbMw" name="choisi l'armure"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_OgbtUOIAEeiCvrel5-gbMw" name="renseigne les infos"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_YI3nMOIAEeiCvrel5-gbMw" name="joue la partie">
+    <include xmi:type="uml:Include" xmi:id="_a5opMOIBEeiCvrel5-gbMw" addition="_VY6yoOIBEeiCvrel5-gbMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_lnDDkOIAEeiCvrel5-gbMw" name="consulte le compte rendu"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qBB7kOIAEeiCvrel5-gbMw" memberEnd="_qBB7k-IAEeiCvrel5-gbMw _qBB7lOIAEeiCvrel5-gbMw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qBB7keIAEeiCvrel5-gbMw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qBB7kuIAEeiCvrel5-gbMw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qBB7k-IAEeiCvrel5-gbMw" name="joue la partie" type="_YI3nMOIAEeiCvrel5-gbMw" association="_qBB7kOIAEeiCvrel5-gbMw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qBB7lOIAEeiCvrel5-gbMw" name="utilisateur" type="_5gtAgOH-EeiCvrel5-gbMw" association="_qBB7kOIAEeiCvrel5-gbMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uxtcUOIAEeiCvrel5-gbMw" memberEnd="_ux3NUuIAEeiCvrel5-gbMw _ux3NU-IAEeiCvrel5-gbMw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ux3NUOIAEeiCvrel5-gbMw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ux3NUeIAEeiCvrel5-gbMw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ux3NUuIAEeiCvrel5-gbMw" name="consulte le compte rendu" type="_lnDDkOIAEeiCvrel5-gbMw" association="_uxtcUOIAEeiCvrel5-gbMw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ux3NU-IAEeiCvrel5-gbMw" name="utilisateur" type="_5gtAgOH-EeiCvrel5-gbMw" association="_uxtcUOIAEeiCvrel5-gbMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_9upVsOIAEeiCvrel5-gbMw" name="consulte la bdd"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="__SoQ8OIAEeiCvrel5-gbMw" client="_CK-MgOIAEeiCvrel5-gbMw" supplier="_9upVsOIAEeiCvrel5-gbMw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ASjc4OIBEeiCvrel5-gbMw" client="_M2VjAOIAEeiCvrel5-gbMw" supplier="_9upVsOIAEeiCvrel5-gbMw"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VY6yoOIBEeiCvrel5-gbMw" name="joue un tour"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XHxhIOIBEeiCvrel5-gbMw" name="choisi l'action du héros"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_cgc2AOIBEeiCvrel5-gbMw" client="_VY6yoOIBEeiCvrel5-gbMw" supplier="_XHxhIOIBEeiCvrel5-gbMw"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_qocEYOIBEeiCvrel5-gbMw" name="partie finie" client="_YI3nMOIAEeiCvrel5-gbMw" supplier="_lnDDkOIAEeiCvrel5-gbMw"/>
+</uml:Model>
